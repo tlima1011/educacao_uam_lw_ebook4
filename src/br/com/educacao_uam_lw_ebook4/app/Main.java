@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import br.com.educacao_uam_lw_ebook4.modelo.Aluno;
+import br.com.educacao_uam_lw_ebook4.modelo.Aula;
 import br.com.educacao_uam_lw_ebook4.modelo.Professor;
 
 public class Main {
@@ -31,11 +32,15 @@ public class Main {
 		p1.disciplina = "Banco de Dados MySQL"; 
 		p1.valor = 88;
 		
+		Aula aula1 = new Aula(10); 
+		
 		System.out.println(a);
 		System.out.println();
 		System.out.println(p);
 		System.out.println();
 		System.out.println(p1);
+		System.out.println();
+		System.out.println(aula1);
 		
 		ler.close();
 	}
