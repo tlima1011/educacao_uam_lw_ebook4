@@ -23,12 +23,12 @@ public class Aluno extends Pessoa {
 		super(n, c);
 		this.matricula = m;
 		this.email = n + "@uam.com.br"; 
-		this.aula.hora = a.hora; 
+		this.aula = a; 
 	}
-		
-	public Aula getAula() {
-		return aula;
-	}
+	
+	/*public void setAula(Aula aula) {
+		this.aula = aula;
+	}*/
 
 	public void listar_frequencia() {
 		System.out.println("Frequencia Computada!");
@@ -41,6 +41,6 @@ public class Aluno extends Pessoa {
 	@Override
 	public String toString() {
 		return "Aluno [Matricula=" + matricula + "\nNome: " + nome + "\nCpf=" + cpf + "\nEndereco=" + endereco
-				+ "\nTelefone=" + telefone + "\nEmail=" + email + "\nAula: " + getAula();
+				+ "\nTelefone=" + telefone + "\nEmail=" + email + "\nAula: " + aula;
 	}
 }
