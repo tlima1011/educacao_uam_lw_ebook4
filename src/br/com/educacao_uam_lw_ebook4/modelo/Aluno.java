@@ -12,6 +12,12 @@ public class Aluno extends Pessoa {
 		super(n, c);
 	}
 	
+	public Aluno(String n, String c, String m) {
+		super(n, c);
+		this.matricula = m;
+		this.email = n + "@uam.com.br";
+	}
+	
 	public void listar_frequencia() {
 		System.out.println("Frequencia Computada!");
 	}
@@ -25,6 +31,4 @@ public class Aluno extends Pessoa {
 		return "Aluno [matricula=" + matricula + ", nome=" + nome + ", cpf=" + cpf + ", endereco=" + endereco
 				+ ", telefone=" + telefone + ", email=" + email + "]";
 	}
-	
-	
 }

@@ -19,6 +19,7 @@ public abstract class Pessoa {
 	public Pessoa(String n) {
 		this(); 
 		this.nome = n;
+		this.email = this.nome + "@uam.com.br";
 	}
 	
 	public Pessoa(String n, String c) {
@@ -35,6 +36,7 @@ public abstract class Pessoa {
 		this.cpf = c; 
 		this.endereco = e; 
 		this.telefone = "(xx) 0000-0000";
+		this.email = this.nome + "@uam.com.br";
 	}
 	
 	public Pessoa(String n, String c, String e, String t) { 
@@ -60,12 +62,10 @@ public abstract class Pessoa {
 	public int excluir(int i) {
 		return 0;
 	}
-	
-	
-	
-	
-	
-	
-	
 
+	@Override
+	public String toString() {
+		return "Pessoa [id=" + id + ", nome=" + nome + ", cpf=" + cpf + ", endereco=" + endereco + ", telefone="
+				+ telefone + ", email=" + email + "]";
+	}
 }
