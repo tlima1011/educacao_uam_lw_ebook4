@@ -13,6 +13,14 @@ public class Professor extends Pessoa{
 		super(n, c);
 	}
 	
+	public Professor(String n, String c, String e) {
+		super(n, c, e);
+	}
+	
+	public Professor(String n, String c, String e, String t) {
+		super(n, c, e, t);
+	}
+
 	public double calcular_horas() {
 		return valor * 20; 
 	}
