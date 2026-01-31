@@ -5,6 +5,10 @@ public class Professor extends Pessoa{
 	public int valor; 
 	public String disciplina; 
 	
+	public Professor(String n) {
+		super(n);
+	}
+	
 	public double calcular_horas() {
 		return valor * 20; 
 	}
