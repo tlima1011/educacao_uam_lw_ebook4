@@ -9,6 +9,10 @@ public class Professor extends Pessoa{
 		super(n);
 	}
 	
+	public Professor(String n, String c) {
+		super(n, c);
+	}
+	
 	public double calcular_horas() {
 		return valor * 20; 
 	}
