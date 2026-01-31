@@ -1,6 +1,6 @@
 package br.com.educacao_uam_lw_ebook4.modelo;
 
-public class Pessoa {
+public abstract class Pessoa {
 	
 	private int id; 
 	private static int uc = 1; 
