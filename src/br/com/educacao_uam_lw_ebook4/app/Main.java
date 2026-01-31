@@ -27,9 +27,15 @@ public class Main {
 		p.disciplina = "Programação Java com POO"; 
 		p.valor = 58;
 		
+		Professor p1 = new Professor("Joana", "333.333.334-22", "Rua Zé, 434", "(11) 66669-9999"); 
+		p1.disciplina = "Banco de Dados MySQL"; 
+		p1.valor = 88;
+		
 		System.out.println(a);
 		System.out.println();
 		System.out.println(p);
+		System.out.println();
+		System.out.println(p1);
 		
 		ler.close();
 	}
