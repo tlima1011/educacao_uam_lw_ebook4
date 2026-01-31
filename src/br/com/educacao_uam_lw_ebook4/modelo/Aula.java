@@ -15,7 +15,7 @@ public class Aula {
 		this.id = uc++; 
 		this.hora = 0; 
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-		this.data = LocalDate.parse("01/01/2000", formatter) ; 
+		this.data = LocalDate.parse("31/06/2026", formatter) ; 
 	}
 	
 	public Aula(int h) {

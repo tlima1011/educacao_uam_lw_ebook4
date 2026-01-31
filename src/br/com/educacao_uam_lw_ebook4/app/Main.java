@@ -28,22 +28,22 @@ public class Main {
 		
 		Aula aula1 = new Aula(10);
 		Aluno a = new Aluno(n, cpf, m, aula1);
-		//Aula aula2 = new Aula(30);
+		Aula aula2 = new Aula(30);
 		
 		Professor p = new Professor("Epaminondas", "233.333.334-22", "Rua Mané, 234", "(11) 8888-9999",disciplina, valor , aula1);
 		
-		/*disciplina = "Banco de Dados MySQL"; 
+		disciplina = "Banco de Dados MySQL"; 
 		valor = 88;
-		Professor p1 = new Professor("Joana"); */
+		//Professor p1 = new Professor("Joana"); 
 			 
 		//a.setAula(aula1); 
-		//Professor p = new Professor("Epaminondas", "233.333.334-22", "Rua Mané, 234", "(11) 8888-9999");
+		Professor p1 = new Professor("Joana Manoela", "555.333.334-22", "Rua José, 1000", "(11) 8888-0000", disciplina, valor, aula2);
 		
 		System.out.println(a);
 		System.out.println();
 		System.out.println(p);
 		System.out.println();
-		//System.out.println(p1);
+		System.out.println(p1);
 		System.out.println();
 		//System.out.println(aula1);
 		
