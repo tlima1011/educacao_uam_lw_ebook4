@@ -23,28 +23,29 @@ public class Main {
 		System.out.print("Informe matricula do aluno: "); 
 		String m = ler.nextLine(); 
 		
-		 
-		Professor p = new Professor("Epaminondas", "233.333.334-22", "Rua Mané, 234", "(11) 8888-9999"); 
 		String disciplina = "Programação Java com POO"; 
-		double valor = 58;
+		int valor = 58;
 		
 		Aula aula1 = new Aula(10);
 		Aluno a = new Aluno(n, cpf, m, aula1);
+		//Aula aula2 = new Aula(30);
 		
+		Professor p = new Professor("Epaminondas", "233.333.334-22", "Rua Mané, 234", "(11) 8888-9999",disciplina, valor , aula1);
 		
-		Professor p1 = new Professor("Joana", "333.333.334-22", "Rua Zé, 434", "(11) 66669-9999"); 
-		p1.disciplina = "Banco de Dados MySQL"; 
-		p1.valor = 88;
+		/*disciplina = "Banco de Dados MySQL"; 
+		valor = 88;
+		Professor p1 = new Professor("Joana"); */
 			 
 		//a.setAula(aula1); 
+		//Professor p = new Professor("Epaminondas", "233.333.334-22", "Rua Mané, 234", "(11) 8888-9999");
 		
 		System.out.println(a);
 		System.out.println();
 		System.out.println(p);
 		System.out.println();
-		System.out.println(p1);
+		//System.out.println(p1);
 		System.out.println();
-		System.out.println(aula1);
+		//System.out.println(aula1);
 		
 		ler.close();
 	}
